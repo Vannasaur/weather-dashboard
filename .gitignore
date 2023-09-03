@@ -1,3 +1,7 @@
 # Ignore Mac system files
 
 .DS_Store
+
+# Ignore config js file w/ sensitive info
+
+config.js
