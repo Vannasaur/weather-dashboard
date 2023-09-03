@@ -11,6 +11,7 @@
         rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous" />
+    <script defer src="./assets/config.js"></script>
     <script defer src="./assets/script.js"></script>
 </head>
 
@@ -19,16 +20,20 @@
         <h1>Weather Dashboard</h1>
     </header>
     <aside>
-        <div class="city-search">Search for a City:</div>
-        <form id="user-input">
-            <input class="city-name" type="text"/>
-            <button type="submit" class="btn">Search</button>
-        </form>
-        <div class="recent-search"></div>
+        <div class="card">
+            <div class="city-search">Search for a City:</div>
+            <form id="user-input">
+                <input id="city-name" type="text"/>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+        <div class="card">
+            <div class="recent-search"></div>
+        </div>
     </aside>
     <main>
-        <div class="current-weather"></div>
-        <div class="forecast-5"></div>
+        <div class="card col-12 col-md-8 current-weather"></div>
+        <div class="card forecast-5"></div>
     </main>
 </body>
 
