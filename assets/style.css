@@ -1,20 +1,23 @@
 :root {
     --primary-bg-color:rgb(129, 157, 214);
-    --primary-text-color:rgb(223, 234, 255);;
+    --primary-text-color:rgb(237, 243, 255);;
     --header-bg-color:rgb(179, 204, 255);
     --header-text-color:rgb(84, 103, 142);
     --search-btn-bg-color:rgb(230, 241, 190);
-    --search-btn-text-color:rgb(76, 81, 59);
+    --search-btn-text-color:rgb(89, 93, 78);
+    --search-btn-shadow-color:rgb(128, 132, 117);
     --search-btn-hover-bg-color:rgb(241, 207, 190);
     --search-btn-hover-text-color:rgb(81, 70, 59);
     --current-card-bg-color:rgb(230, 241, 190);
-    --current-card-text-color:rgb(76, 81, 59);
+    --current-card-text-color:rgb(89, 93, 78);
     --forecast-card-bg-color:rgb(190, 241, 190);
     --forecast-card-text-color:rgb(64, 101, 64);
+    --forecast-card-shadow-color:rgb(111, 140, 111);
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
@@ -38,9 +41,20 @@ h3 {
     color: var(--primary-text-color);
 }
 
+input {
+    border-radius: 5px;
+    border-color: var(--search-btn-shadow-color);
+    border-style: solid;
+}
+
+.main-left {
+    margin-top: 30px;
+}
+
 .btn {
     background-color: var(--search-btn-bg-color);
     color: var(--search-btn-text-color);
+    box-shadow: 2px 2px 3px var(--search-btn-shadow-color);
 }
 
 .btn:hover {
@@ -50,14 +64,25 @@ h3 {
 
 .recent-search{
 color: var(--primary-text-color);
+margin-top: 20px;
 }
 
 .current-weather {
     background-color: var(--current-card-bg-color);
     color: var(--current-card-text-color);
+    padding: 10px;
+    box-shadow: 2px 2px 3px var(--search-btn-shadow-color);
+    margin-top: 30px;
+}
+
+.current-city {
+    color: var(--current-card-text-color);
 }
 
 .forecast {
     background-color: var(--forecast-card-bg-color);
-    color: var(--forecast-card-text-color)
+    color: var(--forecast-card-text-color);
+    box-shadow: 2px 2px 3px var(--forecast-card-shadow-color);
+    padding: 10px;
+    margin: 20px;
 }
