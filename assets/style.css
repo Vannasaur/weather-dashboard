@@ -1,0 +1,63 @@
+:root {
+    --primary-bg-color:rgb(129, 157, 214);
+    --primary-text-color:rgb(223, 234, 255);;
+    --header-bg-color:rgb(179, 204, 255);
+    --header-text-color:rgb(84, 103, 142);
+    --search-btn-bg-color:rgb(230, 241, 190);
+    --search-btn-text-color:rgb(76, 81, 59);
+    --search-btn-hover-bg-color:rgb(241, 207, 190);
+    --search-btn-hover-text-color:rgb(81, 70, 59);
+    --current-card-bg-color:rgb(230, 241, 190);
+    --current-card-text-color:rgb(76, 81, 59);
+    --forecast-card-bg-color:rgb(190, 241, 190);
+    --forecast-card-text-color:rgb(64, 101, 64);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--header-text-color);
+}
+
+h2 {
+    color: var(--primary-text-color);
+}
+
+h3 {
+    color: var(--primary-text-color);
+}
+
+.btn {
+    background-color: var(--search-btn-bg-color);
+    color: var(--search-btn-text-color);
+}
+
+.btn:hover {
+    background-color: var(--search-btn-hover-bg-color);
+    color: var(--search-btn-hover-text-color);
+}
+
+.recent-search{
+color: var(--primary-text-color);
+}
+
+.current-weather {
+    background-color: var(--current-card-bg-color);
+    color: var(--current-card-text-color);
+}
+
+.forecast {
+    background-color: var(--forecast-card-bg-color);
+    color: var(--forecast-card-text-color)
+}
