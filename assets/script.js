@@ -166,7 +166,7 @@ function addRecentSearch(cityName) {
     // Check if city is already in recent searches
     if (!recentSearches.some(search => search === cityName)) {
         // Limit recent search to last 7 only
-        if (recentSearches.length >= 7) {
+        if (recentSearches.length > 7) {
             recentSearches.shift(); // Remove the oldest search
         }
         // Check if the city name was found in the API response
