@@ -3,16 +3,21 @@
     --primary-text-color:rgb(237, 243, 255);;
     --header-bg-color:rgb(179, 204, 255);
     --header-text-color:rgb(84, 103, 142);
-    --search-btn-bg-color:rgb(230, 241, 190);
-    --search-btn-text-color:rgb(89, 93, 78);
-    --search-btn-shadow-color:rgb(128, 132, 117);
-    --search-btn-hover-bg-color:rgb(241, 207, 190);
-    --search-btn-hover-text-color:rgb(81, 70, 59);
-    --current-card-bg-color:rgb(230, 241, 190);
-    --current-card-text-color:rgb(89, 93, 78);
-    --forecast-card-bg-color:rgb(190, 241, 190);
-    --forecast-card-text-color:rgb(64, 101, 64);
+    --search-btn-bg-color:rgb(241, 207, 190);
+    --search-btn-text-color:rgb(81, 70, 59);
+    --search-btn-shadow-color:rgb(140, 130, 122);
+    --search-btn-hover-bg-color:rgb(230, 241, 190);
+    --search-btn-hover-text-color:rgb(89, 93, 78);
+    --current-card-bg-color:rgb(241, 207, 190);;
+    --current-card-text-color:rgb(104, 89, 74);
+    --forecast-card-bg-color:rgb(175, 223, 175);
+    --forecast-card-text-color:rgb(80, 121, 80);
     --forecast-card-shadow-color:rgb(111, 140, 111);
+    --recent-search-bg-color: rgb(230, 241, 190);
+    --recent-search-text-color: rgb(89, 93, 78);
+    --recent-search-hover-bg-color: rgb(241, 207, 190);
+    --recent-search-hover-text-color: rgb(81, 70, 59);
+    --recent-search-hover-shadow: rgb(140, 130, 122);
 }
 
 * {
@@ -47,6 +52,25 @@ input {
     border-style: solid;
 }
 
+img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+button {
+    border-radius: 5px;
+    background-color: var(--recent-search-bg-color);
+    color: var(--recent-search-text-color);
+    border-style: none;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 3px var(--recent-search-hover-shadow);
+}
+
+button:hover {
+    background-color: var(--recent-search-hover-bg-color);
+    color: var(--recent-search-hover-text-color);
+}
+
 .main-left {
     margin-top: 30px;
 }
@@ -55,6 +79,7 @@ input {
     background-color: var(--search-btn-bg-color);
     color: var(--search-btn-text-color);
     box-shadow: 2px 2px 3px var(--search-btn-shadow-color);
+    margin: 0;
 }
 
 .btn:hover {
@@ -70,7 +95,8 @@ margin-top: 20px;
 .current-weather {
     background-color: var(--current-card-bg-color);
     color: var(--current-card-text-color);
-    padding: 10px;
+    font-size: 20px;
+    padding: 10px 10px 20px 20px;
     box-shadow: 2px 2px 3px var(--search-btn-shadow-color);
     margin-top: 30px;
 }
@@ -79,10 +105,21 @@ margin-top: 20px;
     color: var(--current-card-text-color);
 }
 
+.weather-icon-0 {
+    max-width: 7%;
+    max-height: 7%;
+}
+
 .forecast {
     background-color: var(--forecast-card-bg-color);
     color: var(--forecast-card-text-color);
     box-shadow: 2px 2px 3px var(--forecast-card-shadow-color);
-    padding: 10px;
+    padding: 10px 10px 20px 20px;
     margin: 20px;
+}
+
+#recent-search-buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
